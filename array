@@ -224,3 +224,45 @@ int modifyElement(int item){
      printArray(A,SIZE);
 
 }
+  //Ex.11 sum of array elements
+   
+   #include<stdio.h>
+  void main()
+  {
+    int A[7]={1,2,3,4,6,8,-9};
+    int B[7]={2,5,6,9,-7,4,11};
+    int C[14];
+    int i,j=0;
+    for(i=0;i<7;i++,j++)
+    {
+      C[j]=A[i];
+    }
+    for(i=0;i<7;i++,j++)
+    {
+      C[j]=B[i];
+    }
+    for(i=0;i<14;i++)
+    {
+      printf("C[%d] = %d\n",i,C[i]);
+    }
+
+  }
+  
+  //ex.12 finout the maximum from an array element and print it index
+  
+ #include <stdio.h>
+int main() 
+{
+   int maximum=-32768;int index=-1;
+   int A[7]={1,3,5,-2,0,6,1};
+   for(int i=0;i<7;i++)
+   if(maximum<A[i])
+   {
+       maximum=A[i];
+       index=i;
+   }
+   printf("maximum value:%d\n",maximum);
+   printf("index:%d\n",index);
+   return 0;
+   
+}
